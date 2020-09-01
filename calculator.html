@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+	.number {
+		outline: 0;
+		border: black;
+		background-color: lightblue;
+		border-radius: 20px;
+		width: 80px;
+		height: 80px;
+		float: left;
+		font-size: 30px;
+		font-family: Helvetica Neue;
+		padding: 0px;
+		margin: 4px;	
+		
+	}
+	
+		.number:hover {
+		outline: 0;
+		background-color: cornflowerblue;
+		border-radius: 80px;
+		width: 80px;
+		height: 80px;
+		float: left;
+		font-size: 30px;
+		font-family: Helvetica Neue;
+		padding: 0px;
+		margin: 4px;	
+		
+	}
+	
+	.operator {
+		outline: 0;
+		border: none;
+		background-color: khaki;
+		border-radius: 20px;
+		width: 80px;
+		height: 80px;
+		float: left;
+		font-size: 30px;
+		font-family: Helvetica Neue;
+		padding: 0px;
+		margin: 4px;	
+	}
+	
+	.operator:hover {
+		outline: 0;
+		border: none;
+		background-color: #E7B622;
+		border-radius: 80px;
+		width: 80px;
+		height: 80px;
+		float: left;
+		font-size: 30px;
+		font-family: Helvetica Neue;
+		padding: 0px;
+		margin: 4px;	
+		
+	}
+	
+	
+	
+	.operatorE {
+		outline: 0;
+		border: none;
+		background-color: #F2942A;
+		border-radius: 20px;
+		width: 80px;
+		height: 80px;
+		float: left;
+		font-size: 30px;
+		font-family: Helvetica Neue;
+		padding: 0px;
+		margin: 4px;	
+		
+	}
+	
+	.operatorE:hover {
+		outline: 0;
+		border: none;
+		background-color: #CE7823;
+		border-radius: 80px;
+		width: 80px;
+		height: 80px;
+		float: left;
+		font-size: 30px;
+		font-family: Helvetica Neue;
+		padding: 0px;
+		margin: 4px;	
+		
+}
+	
+	.display {
+		text-color: white;
+	}
+	
+	
+	#display {
+		outline: 0;
+		border: none;
+		color: white;
+		background-color: black;
+		border-radius: 20px;
+		width: 320px;
+		height: 100px;
+		float: left;
+		font-size: 50px;
+		font-family: Helvetica Neue;
+		padding-left: 20px;
+		margin: 4px;	
+		
+	}
+	
+	.inputRow{
+		width: 100%;
+		float: left;
+		padding: 0px;
+		position: relative;
+		display: inline-block;
+		
+	}
+	
+	
+	
+	
+</style>
+<title>calculator</title>
+</head>
+
+<body>
+	<form name="calculator">
+	
+	<div id="myCalculator">
+
+	
+		<div id="top_display">
+			
+		<input type="text" name="display" id="display" disabled>
+		</div>
+
+		<div class="inputRow">
+			<input type="button" class="number" value="7" onclick="calculator.display.value +='7'">
+			<input type="button" class="number" value="8" onclick="calculator.display.value +='8'">
+			<input type="button" class="number" value="9" onclick="calculator.display.value +='9'">
+			<input type="button" class="operator" name="divide" value="/" onclick="calculator.display.value +='/'">
+		</div>
+		
+		
+		<div class="inputRow">
+			<input type="button" class="number" value="4" onclick="calculator.display.value +='6'">
+			<input type="button" class="number" value="5" onclick="calculator.display.value +='5'">
+			<input type="button" class="number" value="6" onclick="calculator.display.value +='4'">
+			<input type="button" class="operator" name="multiply" value="*" onclick="calculator.display.value +='*'">
+		</div>
+		
+		<div class="inputRow">
+			<input type="button" class="number" value="1" onclick="calculator.display.value +='1'">
+			<input type="button" class="number" value="2" onclick="calculator.display.value +='2'">
+			<input type="button" class="number" value="3" onclick="calculator.display.value +='3'">
+			<input type="button" class="operator" name="subtract" value="-" onclick="calculator.display.value +='-'">
+			
+		</div>
+		
+	
+		<div class="inputRow">
+			<input type="button" class="number" value="0" onclick="calculator.display.value +='0'">
+			<input type="button" class="number" value="." onclick="calculator.display.value +='.'">
+			<input type="button" class="number" value="" onclick="calculator.display.value +=''">
+			<input type="button" class="operator" name="subtract" value="+" onclick="calculator.display.value +='+'">
+			
+			
+		</div>
+		
+	
+		<div class="inputRow">
+			<input type="button" class="operatorE" name="clear" value="C" onclick="calculator.display.value =''">
+			<input type="button" class="operatorE" name="equals" value="=" onclick="calculator.display.value =eval(calculator.display.value)">
+			
+		</div>
+		
+		
+		
+	
+	</div>
+		
+	</form>
+</body>
+</html>
