@@ -1,0 +1,247 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+	.number {
+		outline: 0;
+		border: #333;
+		background-color: #F26536;
+		border-radius: 90px;
+		width: 48px;
+		height: 48px;
+		float: left;
+		font-size: 42px;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		font-style: bold;
+		color: #FFFFFF;
+		padding: 0px;
+		margin: 4px;	
+		
+	}
+	
+		.number:hover {
+		outline: 0;
+		background-color: #FFFFFF;
+		border-radius: 90px;
+		width: 48px;
+		height: 48px;
+		float: left;
+		font-size: 42px;
+		font-family: Gotham, "Helvetica Neue Bold", Helvetica, Arial, "sans-serif";
+		font-style: bold;
+		color: #F26536;
+		padding: 0px;
+		margin: 4px;	
+		
+}
+	
+	.znumber {
+		outline: 0;
+		border: black;
+		background-color: #F26536;
+		border-radius: 90px;
+		width: 48px;
+		height: 48px;
+		float: left;
+		font-size: 42px;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		font-style: bold;
+		color: #FFFFFF;
+		padding: 0px;
+		margin: 4px;	
+		
+	}
+	
+		.znumber:hover {
+		outline: 0;
+		background-color: #FFFFFF;
+		border-radius: 90px;
+		width: 48px;
+		height: 48px;
+		float: left;
+		font-size: 42px;
+		font-family: Gotham, "Helvetica Neue Bold", Helvetica, Arial, "sans-serif";
+		font-style: bold;
+		color: #F26536;
+		padding: 0px;
+		margin: 4px;	
+		
+	}
+	
+	.operator {
+		outline: 0;
+		border: none;
+		background-color: #F26536;
+		border-radius: 90px;
+		width: 48px;
+		height: 48px;
+		float: left;
+		font-size: 42px;
+		font-family: Gotham, "Helvetica Neue Bold", Helvetica, Arial, "sans-serif";
+		font-style: bold;
+		color: #FFFFFF;
+		padding: 0px;
+		margin: 4px;	
+	}
+	
+	.operator:hover {
+		outline: 0;
+		border: none;
+		background-color: #FFFFFF;
+		border-radius: 90px;
+		width: 48px;
+		height: 48px;
+		float: left;
+		font-size: 42px;
+		font-family: Gotham, "Helvetica Neue Bold", Helvetica, Arial, "sans-serif";
+		font-style: bold;
+		color: #F26536;
+		padding: 0px;
+		margin: 4px;	
+		
+	}
+	
+	
+	
+	.operatorE {
+		outline: 0;
+		border: none;
+		background-color: #333132;
+		width: auto;
+		height: auto;
+		float: left;
+		font-size: 42px;
+		font-family: Gotham, "Helvetica Neue Bold", Helvetica, Arial, "sans-serif";
+		font-style: bold;
+		color: #FFFFFF;
+		margin: 4px;
+		
+	}
+	
+	.operatorE:hover {
+		outline: 0;
+		border: none;
+		background-color: #333132;;
+		width: auto;
+		height: auto;
+		float: left;
+		font-size: 42px;
+		font-family: Gotham, "Helvetica Neue Bold", Helvetica, Arial, "sans-serif";
+		font-style: bold;
+		color: #F26536;
+		padding: 0px;
+		margin: 4px;	
+		
+}
+	
+	.top_display {
+		color: #FFFFFF;
+	}
+	
+	
+	#display {
+		outline: 0;
+		border: none;
+		color: #FFFFFF;
+		background-color:#333132;
+		width: 320px;
+		height: 150px;
+		float: right;
+		font-size: 120px;
+		font-family: Gotham, "Helvetica Neue Bold", Helvetica, Arial, "sans-serif";
+		font-style: bold;
+		padding-left: 20px;
+		margin: 4px;
+		margin-bottom: 20px;
+		
+	}
+	
+	body {
+		background-color:#333132;
+	}
+	
+	.inputRow{
+		width: 100%;
+		float: left;
+		position: relative;
+		display: inline-block;
+		margin: auto;
+		padding: 50px 30px 0px 50px;
+	}
+	.inputRow2{
+		width: 100%;
+		float: left;
+		position: relative;
+		display: inline-block;
+		margin: auto;
+		padding: 5px 30px 0px 50px;
+	}
+	
+	.inputRow3{
+		width: 100%;
+		float: left;
+		position: relative;
+		display: inline-block;
+		margin: auto;
+		padding: 5px 30px 0px 50px;
+	}
+	
+	
+</style>
+<title>calculator</title>
+</head>
+
+<body>
+	
+	
+	<form name="calculator">
+	
+	<div id="myCalculator">
+
+	
+		<div id="top_display">
+			
+		<input type="text" name="display" id="display" disabled>
+		</div>
+
+		<div class="inputRow">
+			<input type="button" class="number" value="7" onclick="calculator.display.value +='7'">
+			<input type="button" class="number" value="8" onclick="calculator.display.value +='8'">
+			<input type="button" class="number" value="9" onclick="calculator.display.value +='9'">
+			<input type="button" class="operator" name="subtract" value="-" onclick="calculator.display.value +='-'">
+			<input type="button" class="operator" name="divide" value="/" onclick="calculator.display.value +='/'">
+		</div>
+		
+		
+		<div class="inputRow2">
+			<input type="button" class="number" value="4" onclick="calculator.display.value +='4'">
+			<input type="button" class="number" value="5" onclick="calculator.display.value +='5'">
+			<input type="button" class="number" value="6" onclick="calculator.display.value +='6'">
+			<input type="button" class="operator" name="subtract" value="+" onclick="calculator.display.value +='+'">
+			<input type="button" class="operator" name="multiply" value="*" onclick="calculator.display.value +='*'">
+			<input type="button" class="operatorE" name="clear" value="clear" onclick="calculator.display.value =''">
+		</div>
+		
+		
+		
+		<div class="inputRow3">
+			<input type="button" class="number" value="1" onclick="calculator.display.value +='1'">
+			<input type="button" class="number" value="2" onclick="calculator.display.value +='2'">
+			<input type="button" class="number" value="3" onclick="calculator.display.value +='3'">
+			<input type="button" class="znumber" value="0" onclick="calculator.display.value +='0'">
+			<input type="button" class="number" value="." onclick="calculator.display.value +='.'">
+			<input type="button" class="operatorE" name="equals" value="equals" onclick="calculator.display.value =eval(calculator.display.value)">
+		</div>
+		
+	
+		
+	
+		
+		
+	
+	</div>
+		
+	</form>
+</body>
+</html>
